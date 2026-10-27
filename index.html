@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="golden-cookie" class="hidden">🌟 x2 СИЛА!</button>
+
+    <div class="game-container">
+        <h1>Счёт: <span id="score">0</span></h1>
+
+        <button id="main-click-btn" class="cookie-btn">КЛИК!</button>
+
+        <div class="shop">
+            <h2>Магазин</h2>
+            <button id="btn-upgrade-click">
+                Сила клика (+<span id="step-upgrade-click">1</span>)<br>
+                Цена: <span id="cost-upgrade-click">10</span>
+            </button>
+            <button id="btn-autoclicker">
+                Автокликер (+<span id="step-autoclicker">1</span>/сек)<br>
+                Цена: <span id="cost-autoclicker">50</span>
+            </button>
+        </div>
+
+        <button id="btn-reset" class="reset-btn">Сбросить прогресс</button>
+    </div>
+
+    <div id="reward-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>🎉 Достижение: Начинающий кодер!</h2>
+            <p>Ты накликал целое состояние. Вот полезные ресурсы для обучения:</p>
+            <ul class="links-list">
+                <li><a href="https://javascript.info/" target="_blank">Современный учебник JS</a></li>
+                <li><a href="https://www.codewars.com/" target="_blank">Codewars (практика кода)</a></li>
+                <li><a href="https://tproger.ru/" target="_blank">Tproger (новости IT)</a></li>
+            </ul>
+            <button id="btn-close-modal" class="close-btn">Вернуться к игре</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
